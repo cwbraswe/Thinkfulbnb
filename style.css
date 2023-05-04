@@ -126,7 +126,7 @@ form label {
 
 form select,
 form input {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   width: 180px;
 }
 
@@ -173,17 +173,20 @@ footer p {
   }
   .container {
     display: flex;
+    align-items: center;
   }
   .column {
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
   }
   #stay {
     flex-direction: column;
   }
   #about img {
-    height: 225px;
-    width: 300px;
+    height: 300px;
+    width: 450px;
     margin-right: 20px;
   }
   header nav {
@@ -195,6 +198,8 @@ footer p {
   header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
   }
   h2{
     display: flex;
@@ -208,9 +213,18 @@ footer p {
   #host {
   flex-direction: row;
   }
-#host img {
+  #host img {
   height: 50%;
   width: 50%;
 }
-
+  .img-row {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  }
+  .img-column {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  }
 }
